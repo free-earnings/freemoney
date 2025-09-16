@@ -23,7 +23,20 @@
 <body>
   <p>Đang chuyển hướng... Nếu không tự chuyển, bấm <a href="https://s.shopee.vn/9zoOsWrzEG">vào đây</a>.</p>
 
-  <!-- Redirect sang trang Shopee sau 2 giây -->
+  <!-- Script random query string -->
+  <script>
+    (function() {
+      // Nếu URL chưa có query string
+      if (window.location.search === "") {
+        // Tạo số ngẫu nhiên
+        var rand = Math.floor(Math.random() * 1000000);
+        // Thêm query string vào URL (không mất hash nếu có)
+        window.location.href = window.location.pathname + "?ref=" + rand + window.location.hash;
+      }
+    })();
+  </script>
+
+  <!-- Redirect sang trang Shopee sau 1 giây -->
   <script>
     setTimeout(function(){
       window.location.href = "https://s.shopee.vn/9zoOsWrzEG";
