@@ -2,24 +2,32 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <title>Trang Preview</title>
+  <title>Kiếm tiền miễn phí</title>
 
-  <!-- OG tags để hiển thị khi share -->
+  <!-- OG tags cho Facebook -->
   <meta property="og:title" content="Kiếm tiền miễn phí" />
   <meta property="og:description" content="Nhận tiền miễn phí mỗi 15 phút!" />
   <meta property="og:image" content="https://raw.githubusercontent.com/free-earnings/freemoney/main/money.jpeg" />
   <meta property="og:url" content="https://free-earnings.github.io/freemoney/" />
-  
+  <meta property="og:type" content="website" />
+
+  <!-- Thẻ Twitter (phòng khi chia sẻ qua Zalo/Telegram) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kiếm tiền miễn phí" />
+  <meta name="twitter:description" content="Nhận tiền miễn phí mỗi 15 phút!" />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/free-earnings/freemoney/main/money.jpeg" />
+
+  <!-- Đảm bảo bot đọc xong metadata trước khi redirect -->
+  <meta name="robots" content="index,follow" />
 </head>
 <body>
   <p>Đang chuyển hướng... Nếu không tự chuyển, bấm <a href="https://s.shopee.vn/9zoOsWrzEG">vào đây</a>.</p>
 
-  <!-- Chuyển hướng sang trang thật -->
+  <!-- Redirect sang trang Shopee sau 2 giây -->
   <script>
     setTimeout(function(){
       window.location.href = "https://s.shopee.vn/9zoOsWrzEG";
-    }, 500);
+    }, 2000);
   </script>
-
 </body>
 </html>
